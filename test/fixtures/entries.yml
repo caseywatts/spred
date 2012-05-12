@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  entrytime: 2012-05-12 14:14:21
+  sickstatus: 1
+  fever: false
+  sorethroat: false
+  runnynose: false
+  stomachache: false
+  other: false
+  medication: false
+  user_id: 1
+
+two:
+  entrytime: 2012-05-12 14:14:21
+  sickstatus: 1
+  fever: false
+  sorethroat: false
+  runnynose: false
+  stomachache: false
+  other: false
+  medication: false
+  user_id: 1

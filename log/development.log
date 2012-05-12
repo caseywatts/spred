@@ -1,0 +1,312 @@
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-12 13:47:16 -0400
+
+Errno::ENOENT (No such file or directory - /home/casey/code/spred/spred/config/locales/en.yml):
+  
+
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.2ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-05-12 13:47:17 -0400
+
+Errno::ENOENT (No such file or directory - /home/casey/code/spred/spred/config/locales/en.yml):
+  
+
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-12 13:47:18 -0400
+
+Errno::ENOENT (No such file or directory - /home/casey/code/spred/spred/config/locales/en.yml):
+  
+
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-05-12 13:47:18 -0400
+
+Errno::ENOENT (No such file or directory - /home/casey/code/spred/spred/config/locales/en.yml):
+  
+
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-05-12 13:47:55 -0400
+Served asset /rails.png - 200 OK (4ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-05-12 14:00:28 -0400
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-05-12 14:00:33 -0400
+  Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  app/controllers/users_controller.rb:5:in `index'
+
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.1ms)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (116.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (73.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120512175743)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (120.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (73.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120512175743)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (120.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (74.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120512175743)
+  [1m[35m (0.8ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "firstname" varchar(255), "lastname" varchar(255), "phone" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120512175743')[0m
+Migrating to CreateFriendships (20120512180026)
+  [1m[35m (0.4ms)[0m  CREATE TABLE "friendships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "phone" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120512180026')[0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("friendships")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+
+
+Started GET "/users" for 127.0.0.1 at 2012-05-12 14:04:17 -0400
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+Rendered users/index.html.erb within layouts/application (21.4ms)
+Compiled application.css  (1ms)  (pid 31685)
+Compiled scaffolds.css  (18ms)  (pid 31685)
+Compiled users.css  (1ms)  (pid 31685)
+Compiled application.js  (13ms)  (pid 31685)
+Compiled jquery.js  (22ms)  (pid 31685)
+Compiled jquery_ujs.js  (1ms)  (pid 31685)
+Compiled users.js  (481ms)  (pid 31685)
+Completed 200 OK in 638ms (Views: 636.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-12 14:04:19 -0400
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-12 14:04:19 -0400
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-05-12 14:04:19 -0400
+Served asset /users.css - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-12 14:04:19 -0400
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-05-12 14:04:19 -0400
+Served asset /users.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-12 14:04:19 -0400
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-12 14:04:19 -0400
+Served asset /application.js - 200 OK (0ms)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (142.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (94.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120512175743)
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "firstname" varchar(255), "lastname" varchar(255), "phone" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120512175743')[0m
+Migrating to CreateFriendships (20120512180026)
+  [1m[35m (0.4ms)[0m  CREATE TABLE "friendships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "phone" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120512180026')[0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("friendships")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+
+
+Started GET "/entries" for 127.0.0.1 at 2012-05-12 14:14:46 -0400
+  Processing by EntriesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'entries'):
+  app/controllers/entries_controller.rb:5:in `index'
+
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.0ms)
+
+
+Started GET "/entrys" for 127.0.0.1 at 2012-05-12 14:14:48 -0400
+
+ActionController::RoutingError (No route matches [GET] "/entrys"):
+  
+
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/entry" for 127.0.0.1 at 2012-05-12 14:14:50 -0400
+
+ActionController::RoutingError (No route matches [GET] "/entry"):
+  
+
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2012-05-12 14:14:52 -0400
+  Processing by EntriesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'entries'):
+  app/controllers/entries_controller.rb:5:in `index'
+
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.7ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2012-05-12 14:14:59 -0400
+  Processing by EntriesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'entries'):
+  app/controllers/entries_controller.rb:5:in `index'
+
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.7ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2012-05-12 14:15:01 -0400
+  Processing by EntriesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'entries'):
+  app/controllers/entries_controller.rb:5:in `index'
+
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120512175743)
+Migrating to CreateFriendships (20120512180026)
+Migrating to CreateEntries (20120512181421)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "entrytime" datetime, "sickstatus" integer, "fever" boolean, "sorethroat" boolean, "runnynose" boolean, "stomachache" boolean, "other" boolean, "medication" boolean, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120512181421')
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("entries")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("friendships")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+
+
+Started GET "/entries" for 127.0.0.1 at 2012-05-12 14:15:19 -0400
+  Processing by EntriesController#index as HTML
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT "entries".* FROM "entries" [0m
+Rendered entries/index.html.erb within layouts/application (1.3ms)
+Compiled application.css  (2ms)  (pid 31988)
+Compiled entries.css  (3ms)  (pid 31988)
+Compiled application.js  (3ms)  (pid 31988)
+Compiled entries.js  (182ms)  (pid 31988)
+Completed 200 OK in 253ms (Views: 251.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-12 14:15:20 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-05-12 14:15:20 -0400
+Served asset /entries.js - 200 OK (4ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-05-12 14:15:20 -0400
+Served asset /entries.css - 200 OK (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-12 14:15:20 -0400
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-05-12 14:15:20 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-12 14:15:20 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-12 14:15:20 -0400
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-05-12 14:15:20 -0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-05-12 14:15:51 -0400
+
+ActionController::RoutingError (undefined local variable or method `dependent' for #<Class:0xa69de44>):
+  app/models/user.rb:3:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:1:in `<top (required)>'
+
+Rendered /home/casey/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-05-12 14:16:05 -0400
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+Rendered users/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-12 14:16:05 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-12 14:16:05 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-05-12 14:16:05 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-05-12 14:16:05 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-12 14:16:05 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-05-12 14:16:05 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-12 14:16:05 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-05-12 14:16:05 -0400
+Served asset /users.js - 304 Not Modified (0ms)

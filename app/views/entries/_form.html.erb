@@ -1,0 +1,53 @@
+<%= form_for(@entry) do |f| %>
+  <% if @entry.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@entry.errors.count, "error") %> prohibited this entry from being saved:</h2>
+
+      <ul>
+      <% @entry.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :entrytime %><br />
+    <%= f.datetime_select :entrytime %>
+  </div>
+  <div class="field">
+    <%= f.label :sickstatus %><br />
+    <%= f.number_field :sickstatus %>
+  </div>
+  <div class="field">
+    <%= f.label :fever %><br />
+    <%= f.check_box :fever %>
+  </div>
+  <div class="field">
+    <%= f.label :sorethroat %><br />
+    <%= f.check_box :sorethroat %>
+  </div>
+  <div class="field">
+    <%= f.label :runnynose %><br />
+    <%= f.check_box :runnynose %>
+  </div>
+  <div class="field">
+    <%= f.label :stomachache %><br />
+    <%= f.check_box :stomachache %>
+  </div>
+  <div class="field">
+    <%= f.label :other %><br />
+    <%= f.check_box :other %>
+  </div>
+  <div class="field">
+    <%= f.label :medication %><br />
+    <%= f.check_box :medication %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

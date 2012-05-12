@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Entrytime:</b>
+  <%= @entry.entrytime %>
+</p>
+
+<p>
+  <b>Sickstatus:</b>
+  <%= @entry.sickstatus %>
+</p>
+
+<p>
+  <b>Fever:</b>
+  <%= @entry.fever %>
+</p>
+
+<p>
+  <b>Sorethroat:</b>
+  <%= @entry.sorethroat %>
+</p>
+
+<p>
+  <b>Runnynose:</b>
+  <%= @entry.runnynose %>
+</p>
+
+<p>
+  <b>Stomachache:</b>
+  <%= @entry.stomachache %>
+</p>
+
+<p>
+  <b>Other:</b>
+  <%= @entry.other %>
+</p>
+
+<p>
+  <b>Medication:</b>
+  <%= @entry.medication %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @entry.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>

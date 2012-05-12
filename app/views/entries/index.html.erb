@@ -1,0 +1,39 @@
+<h1>Listing entries</h1>
+
+<table>
+  <tr>
+    <th>Entrytime</th>
+    <th>Sickstatus</th>
+    <th>Fever</th>
+    <th>Sorethroat</th>
+    <th>Runnynose</th>
+    <th>Stomachache</th>
+    <th>Other</th>
+    <th>Medication</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @entries.each do |entry| %>
+  <tr>
+    <td><%= entry.entrytime %></td>
+    <td><%= entry.sickstatus %></td>
+    <td><%= entry.fever %></td>
+    <td><%= entry.sorethroat %></td>
+    <td><%= entry.runnynose %></td>
+    <td><%= entry.stomachache %></td>
+    <td><%= entry.other %></td>
+    <td><%= entry.medication %></td>
+    <td><%= entry.user_id %></td>
+    <td><%= link_to 'Show', entry %></td>
+    <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
+    <td><%= link_to 'Destroy', entry, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Entry', new_entry_path %>
