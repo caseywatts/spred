@@ -1,3 +1,4 @@
+<div data-role="fieldcontain">
 <%= form_for(@entry) do |f| %>
   <% if @entry.errors.any? %>
     <div id="error_explanation">
@@ -13,11 +14,17 @@
 
   <div class="field">
     <%= f.label :entrytime %><br />
-    <%= f.datetime_select :entrytime %>
+    <%= f.datetime_select :entrytime, :default => Time.now %>
   </div>
   <div class="field">
-    <%= f.label :sickstatus %><br />
-    <%= f.number_field :sickstatus %>
+      <%= image_tag("sad.png", :height => '50', :width => '50', :padding => "0px")%>
+      <%= f.label :sickstatus, :class => "ui-hidden-accessible" %>
+      <%#<%= f.number_field :sickstatus %>
+      <input data-inline="true" class="ui-slider-bg ui-btn-active ui-btn-corner-all" type="range" name="feeling" id="entry_sickstatus" value="1" step="1" min="1" max="10" data-highlight="true"  />
+      <%= image_tag("happy.png", :height => '50', :width => '50', :padding => "0px")%>
+
+
+
   </div>
   <div class="field">
     <%= f.label :fever %><br />
@@ -45,9 +52,11 @@
   </div>
   <div class="field">
     <%= f.label :user_id %><br />
-    <%= f.number_field :user_id %>
+    <%= f.hidden_field :user_id, :value => 1 %>
+    <%#= f.collection_select :user_id, @users, :id, :firstname, {:prompt => "Who?"},{}%>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+</div>

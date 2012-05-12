@@ -3,12 +3,93 @@
 <head>
   <title>Spred</title>
   <%= stylesheet_link_tag    "application" %>
+  <%= stylesheet_link_tag    "spred.css" %>
+  <%= stylesheet_link_tag    "jquery.mobile.datebox.css" %>
+  <%#<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile.structure-1.1.0.min.css" />%>
+
+  <%= javascript_include_tag :defaults %>
   <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "d3.v2.js" %>
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
   <%= csrf_meta_tags %>
+  
+<script type="text/javascript">
+  $( '#main').live('pageinit',function(event){
+	$("#save").click(function() {
+		message(
+		$.mobile.changePage( "#p2", { transition: "slideup"} );
+	});
+	var today = new Date();
+	//$("#date").data('datebox').options.defaultPickerValue=today.getMonth();
+
+});
+</script>
+
 </head>
 <body>
 
+<div id="sickreport" data-role="page" data-inline="true">
+	<div data-role="header"><h1>Feeling Sick</h1>
+	</div><!-- /header -->
+	<div data-role="content" data-content-theme="a">	
+		<form action="#" method="get" id="reportform">
+		
+		<div data-role="fieldcontain">
+		<fieldset>
+		
+			<!-- put in sad face -->
+			<img src="img/sad.png" data-inline="true" style="width:50px;height:50px;padding:0px;"></img>
+	
+			<label for="feeling" class="ui-hidden-accessible" ></label>
+			<input data-inline="true" class="ui-hidden-accessible" type="range" name="feeling" id="feeling" value="1" step="1" min="1" max="10" data-highlight="true"  />
+			<img src="img/happy.png" style="width:50px;height:50px" data-inline="true"></img>
+			<!-- put in sad face -->
+		</fieldset>
+		</div>
+		
+		<div data-role="fieldcontain" >
+		<fieldset>
+			<label for="date">DATE</label>
+			<input name="date" id="date" type="date" data-role="datebox" data-options='{"mode": "flipbox"}'>
+   
+   			<label for="time">TIME</label>
+			<input name="time" id="time" type="date" data-role="datebox" data-options='{"mode": "timeflipbox", "timeFormatOverride": 12}'>
+			
+		</fieldset>
+		</div>
+		<div data-role="fieldcontain">
+			<fieldset>
+				<legend>List your symptoms (optional)</legend>
+				
+				<input type="checkbox" name="cough" id="cough" class="custom" />
+				<label for="cough">Cough</label>
+
+				<input type="checkbox" name="fever" id="fever" class="custom" />
+				<label for="fever">Fever</label>
+				
+				<input type="checkbox" name="soarthroat" id="soarthroat" class="custom" />
+				<label for="soarthroat">Soar Throat</label>
+				
+				<input type="checkbox" name="runnynose" id="runnynose" class="custom" />
+				<label for="runnynose">Runny Nose</label>
+				
+				<input type="checkbox" name="stomachache" id="stomachache" class="custom" />
+				<label for="stomachache">Stomach Ache</label>
+		    </fieldset>
+		</div>
+			<button id="cancel" data-icon="delete" data-inline="true">Cancel</a>
+			<button id="save" data-icon="check" data-theme="b" data-inline="true">Save</a>
+		</form>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="main">
 <%= yield %>
+</div>
 
 </body>
 </html>

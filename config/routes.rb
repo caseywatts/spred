@@ -1,4 +1,10 @@
 Spred::Application.routes.draw do
+  resources :friends
+
+  resources :trends
+
+  resources :dashboards
+
   resources :entries
 
   resources :users

@@ -1,0 +1,30 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1336849588.2430284:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%a4b34da4b07c72ee5b33fde4197fb169I"logical_path;
+F"friends.jsI"pathname;
+FI"3$root/app/assets/javascripts/friends.js.coffee;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-05-12T15:06:12-04:00;
+FI"	body;
+FI"%(function() {
+
+
+
+}).call(this);
+;
+TI"asset_paths;
+F[I"3$root/app/assets/javascripts/friends.js.coffee;
+FI"dependency_paths;
+F[{I"	path;
+FI"3$root/app/assets/javascripts/friends.js.coffee;
+FI"
+mtime;
+FIu:	Time“€ÆÒÄ
+:@_zoneI"EDT;
+T:nano_numiL:nano_deni:submicro"3 :offsetiþÀÇI"hexdigest;
+F"%f50e3d51579225e3370988d160060f33I"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

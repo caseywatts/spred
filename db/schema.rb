@@ -11,11 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120512181421) do
+ActiveRecord::Schema.define(:version => 20120512190612) do
+
+  create_table "dashboards", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "entries", :force => true do |t|
     t.datetime "entrytime"
     t.integer  "sickstatus"
+    t.boolean  "cough"
     t.boolean  "fever"
     t.boolean  "sorethroat"
     t.boolean  "runnynose"
@@ -27,9 +33,27 @@ ActiveRecord::Schema.define(:version => 20120512181421) do
     t.datetime "updated_at"
   end
 
+  create_table "friends", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "phone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "friendships", :force => true do |t|
     t.integer  "user_id"
     t.integer  "phone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "illnesses", :force => true do |t|
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "trends", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -38,6 +62,7 @@ ActiveRecord::Schema.define(:version => 20120512181421) do
     t.string   "firstname"
     t.string   "lastname"
     t.integer  "phone"
+    t.datetime "birthday"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -3,6 +3,7 @@ class CreateEntries < ActiveRecord::Migration
     create_table :entries do |t|
       t.datetime :entrytime
       t.integer :sickstatus
+      t.boolean :cough
       t.boolean :fever
       t.boolean :sorethroat
       t.boolean :runnynose
@@ -10,6 +11,8 @@ class CreateEntries < ActiveRecord::Migration
       t.boolean :other
       t.boolean :medication
       t.integer :user_id
+      #t.integer :illness_id
+
 
       t.timestamps
     end

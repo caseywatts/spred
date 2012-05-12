@@ -35,12 +35,14 @@ class EntriesController < ApplicationController
   # GET /entries/1/edit
   def edit
     @entry = Entry.find(params[:id])
+    @users = User.all
   end
 
   # POST /entries
   # POST /entries.json
   def create
     @entry = Entry.new(params[:entry])
+    raise params.to_yaml
 
     respond_to do |format|
       if @entry.save

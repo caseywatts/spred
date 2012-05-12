@@ -1,39 +1,18 @@
-<h1>Listing entries</h1>
+<div data-role="header">
+  <h1>Listing entries</h1>
+  <%= link_to 'Add', new_entry_path, "data-icon" => "plus", "class" => "ui-btn-right" %>
+</div>
 
-<table>
-  <tr>
-    <th>Entrytime</th>
-    <th>Sickstatus</th>
-    <th>Fever</th>
-    <th>Sorethroat</th>
-    <th>Runnynose</th>
-    <th>Stomachache</th>
-    <th>Other</th>
-    <th>Medication</th>
-    <th>User</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
 
+<div data-role="content" data-content-theme="a">
+  <ul data-role="listview">
 <% @entries.each do |entry| %>
-  <tr>
-    <td><%= entry.entrytime %></td>
-    <td><%= entry.sickstatus %></td>
-    <td><%= entry.fever %></td>
-    <td><%= entry.sorethroat %></td>
-    <td><%= entry.runnynose %></td>
-    <td><%= entry.stomachache %></td>
-    <td><%= entry.other %></td>
-    <td><%= entry.medication %></td>
-    <td><%= entry.user_id %></td>
-    <td><%= link_to 'Show', entry %></td>
-    <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
-    <td><%= link_to 'Destroy', entry, confirm: 'Are you sure?', method: :delete %></td>
+    <li><%= link_to entry.entrytime, edit_entry_path(entry) %></li>
   </tr>
 <% end %>
-</table>
+  </ul>
+</div>
 
-<br />
+
 
 <%= link_to 'New Entry', new_entry_path %>
